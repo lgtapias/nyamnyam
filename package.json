@@ -1,0 +1,23 @@
+{
+  "name": "nyam-nyam",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "devDependencies": {
+    "@parcel/packager-raw-url": "^2.14.3",
+    "@parcel/transformer-webmanifest": "^2.14.3",
+    "parcel": "^2.14.3"
+  },
+  "staticFiles": {
+    "staticPath": [
+      "src/fonts",
+      "src/assets"
+    ],
+    "watcherGlob": "**/*.{woff2,woff,ttf,png,jpg,svg}"
+  },
+  "dependencies": {
+    "@splidejs/splide": "^4.1.4",
+    "swiper": "^11.2.6"
+  }
+}
