@@ -1,94 +1,97 @@
 <!DOCTYPE html>
 <html lang="ca">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipes - Nyam Nyam</title>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
-    <link rel="manifest" href="assets/manifest.json">
-    <meta name="theme-color" content="#465BBD">
-    <!-- Styles -->
-    <link rel="stylesheet" href="styles/styles.scss">
-    <link rel="stylesheet" href="styles/satoshi.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipes - Nyam Nyam</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <link rel="manifest" href="assets/manifest.json">
+  <meta name="theme-color" content="#465BBD">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="dist/styles.css">
+  <link rel="stylesheet" href="src/styles/satoshi.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav>
-        <div class="logo">
-            <a href="index.html">nyamNyam😋</a>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">
+      <a href="index.html">nyamNyam😋</a>
+    </div>
+    <div class="nav-links">
+      <a href="recipes.html" class="nav-link">RECIPES</a>
+      <a href="links.html" class="nav-link">LINKS</a>
+    </div>
+  </nav>
+
+  <!-- Recipes Grid -->
+  <main class="recipes-container">
+    <h1>Most Popular This Week</h1>
+    <div class="recipes-grid">
+      <!-- Receptes principals -->
+      <article class="recipe-card">
+        <div class="image-container">
+          <a href="pa-amb-tomaquet.html">
+            <img src="assets/pa-amb-tomaquet.jpg" alt="Pa amb tomàquet" loading="lazy">
+          </a>
         </div>
-        <div class="nav-links">
-            <a href="recipes.html" class="nav-link">RECIPES</a>
-            <a href="links.html" class="nav-link">LINKS</a>
+        <h2 class="recipe-title">Pa amb tomàquet</h2>
+      </article>
+
+      <article class="recipe-card">
+        <div class="image-container">
+          <a href="crema-catalana.html">
+            <img src="assets/crema-catalana.jpg" alt="Crema catalana" loading="lazy">
+          </a>
         </div>
-    </nav>
+        <h2 class="recipe-title">Crema catalana</h2>
+      </article>
 
-    <!-- Recipes Grid -->
-    <main class="recipes-container">
-        <h1>Most Popular This Week</h1>
-        <div class="recipes-grid">
-            <!-- Receptes principals -->
-            <article class="recipe-card">
-                <div class="image-container">
-                    <a href="pa-amb-tomaquet.html">
-                        <img src="assets/pa-amb-tomaquet.jpg" alt="Pa amb tomàquet" loading="lazy">
-                    </a>
-                </div>
-                <h2 class="recipe-title">Pa amb tomàquet</h2>
-            </article>
-
-            <article class="recipe-card">
-                <div class="image-container">
-                    <a href="crema-catalana.html">
-                        <img src="assets/crema-catalana.jpg" alt="Crema catalana" loading="lazy">
-                    </a>
-                </div>
-                <h2 class="recipe-title">Crema catalana</h2>
-            </article>
-
-            <!-- Receptes de mostra -->
-            <article class="recipe-card">
-                <div class="image-container">
-                    <img src="assets/canelons.jpg" alt="Canelons" loading="lazy">
-                </div>
-                <h2 class="recipe-title">Canelons de carn</h2>
-            </article>
-
-            <article class="recipe-card">
-                <div class="image-container">
-                    <img src="assets/escudella.jpg" alt="Escudella" loading="lazy">
-                </div>
-                <h2 class="recipe-title">Escudella</h2>
-            </article>
-
-            <article class="recipe-card">
-                <div class="image-container">
-                    <img src="assets/fricando.jpg" alt="Fricandó" loading="lazy">
-                </div>
-                <h2 class="recipe-title">Fricandó amb Bolets</h2>
-            </article>
-
-            <article class="recipe-card">
-                <div class="image-container">
-                    <img src="assets/bunyols.jpg" alt="Bunyols" loading="lazy">
-                </div>
-                <h2 class="recipe-title">Bunyols de Quaresma</h2>
-            </article>
+      <!-- Receptes de mostra -->
+      <article class="recipe-card">
+        <div class="image-container">
+          <img src="assets/canelons.jpg" alt="Canelons" loading="lazy">
         </div>
-    </main>
+        <h2 class="recipe-title">Canelons de carn</h2>
+      </article>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 nyamNyam. Tots els drets reservats.</p>
-    </footer>
+      <article class="recipe-card">
+        <div class="image-container">
+          <img src="assets/escudella.jpg" alt="Escudella" loading="lazy">
+        </div>
+        <h2 class="recipe-title">Escudella</h2>
+      </article>
 
-    <script src="scripts.js"></script>
+      <article class="recipe-card">
+        <div class="image-container">
+          <img src="assets/fricando.jpg" alt="Fricandó" loading="lazy">
+        </div>
+        <h2 class="recipe-title">Fricandó amb Bolets</h2>
+      </article>
+
+      <article class="recipe-card">
+        <div class="image-container">
+          <img src="assets/bunyols.jpg" alt="Bunyols" loading="lazy">
+        </div>
+        <h2 class="recipe-title">Bunyols de Quaresma</h2>
+      </article>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 nyamNyam. Tots els drets reservats.</p>
+  </footer>
+
+  <script src="src/scripts.js"></script>
 </body>
 </html>
