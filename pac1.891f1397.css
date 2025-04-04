@@ -1,0 +1,28 @@
+@font-face {
+  font-family: Satoshi;
+  src: url("Satoshi-Light.8b70d686.woff2") format("woff2"), url("Satoshi-Light.19ebb0b9.woff") format("woff"), url("Satoshi-Light.2099e1ed.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Satoshi;
+  src: url("Satoshi-Regular.8a3eac13.woff2") format("woff2"), url("Satoshi-Regular.6b35aee1.woff") format("woff"), url("Satoshi-Regular.e63b368a.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Satoshi;
+  src: url("Satoshi-Bold.7cc22cb9.woff2") format("woff2"), url("Satoshi-Bold.21ffcef8.woff") format("woff"), url("Satoshi-Bold.96313b3e.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Satoshi;
+  src: url("Satoshi-Black.f2d081d4.woff2") format("woff2"), url("Satoshi-Black.84e6d4a4.woff") format("woff"), url("Satoshi-Black.eb04c21e.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+/*# sourceMappingURL=pac1.891f1397.css.map */
