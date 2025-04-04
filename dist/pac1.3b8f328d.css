@@ -36,17 +36,19 @@ a {
 .skip-link {
   color: #fff;
   z-index: 100;
-  background: #000;
+  background: #e77e23;
   padding: 8px;
   text-decoration: none;
+  transition: transform .3s, top .3s;
   position: absolute;
   top: -40px;
-  left: 0;
+  left: 50%;
+  transform: translateY(-100%)translateX(-50%);
 }
 
 .skip-link:focus {
-  position: static;
-  top: auto;
+  top: 10px;
+  transform: translateY(0)translateX(-50%);
 }
 
 nav {
