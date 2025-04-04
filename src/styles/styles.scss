@@ -259,7 +259,7 @@ nav {
       }
 
       &:hover {
-        cursor: url("../assets/cursor.png") 16 16, auto; /* Cursor en forma d'emoticona */
+        cursor: url("../assets/cursor.png") 16 16, auto; 
 
         .image-container img {
           transform: scale(1.05);
@@ -279,7 +279,7 @@ nav {
         color: inherit;
 
         &:hover {
-          cursor: url("../assets/cursor.png") 16 16, pointer; /* Cursor en forma d'emoticona */
+          cursor: url("../assets/cursor.png") 16 16, pointer; 
         }
       }
     }
