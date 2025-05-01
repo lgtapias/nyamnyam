@@ -41,9 +41,23 @@
             <p><strong>Difficulty:</strong> Easy</p>
         </div>
         
-        <img src="assets/pa-amb-tomaquet.jpg" 
-             alt="Pa amb tomàquet preparat"
-             class="featured-image">
+        <picture>
+            <!-- Versió AVIF per navegadors moderns -->
+            <source srcset="assets/pa-amb-tomaquet.jpg?as=avif&width=1200" type="image/avif" media="(min-width: 1200px)">
+            <source srcset="assets/pa-amb-tomaquet.jpg?as=avif&width=800" type="image/avif" media="(min-width: 768px)">
+            <source srcset="assets/pa-amb-tomaquet.jpg?as=avif&width=400" type="image/avif" media="(max-width: 767px)">
+        
+            <!-- Versió WebP per navegadors que no suporten AVIF -->
+            <source srcset="assets/pa-amb-tomaquet.jpg?as=webp&width=1200" type="image/webp" media="(min-width: 1200px)">
+            <source srcset="assets/pa-amb-tomaquet.jpg?as=webp&width=800" type="image/webp" media="(min-width: 768px)">
+            <source srcset="assets/pa-amb-tomaquet.jpg?as=webp&width=400" type="image/webp" media="(max-width: 767px)">
+        
+            <!-- Fallback per navegadors antics -->
+            <img src="assets/pa-amb-tomaquet.jpg?width=400" 
+                 alt="Pa amb tomàquet preparat"
+                 class="featured-image">
+        </picture>
+        
         
         <div class="recipe-content">
             <section class="ingredients">
@@ -58,9 +72,35 @@
 
             <section class="media">
                 <div class="image-grid">
-                    <img src="assets/pa-tomaquet-1.jpg" alt="Pa amb Tomàquet preparation" class="additional-image">
-                    <img src="assets/pa-tomaquet-2.jpg" alt="Pa amb Tomàquet with toppings" class="additional-image">
-                    <img src="assets/pa-tomaquet-3.jpg" alt="Pa amb Tomàquet served" class="additional-image">
+                    <picture>
+                        <source srcset="assets/pa-tomaquet-1.jpg?as=avif&width=600" type="image/avif" media="(min-width: 768px)">
+                        <source srcset="assets/pa-tomaquet-1.jpg?as=avif&width=400" type="image/avif" media="(max-width: 767px)">
+
+                        <source srcset="assets/pa-tomaquet-1.jpg?as=webp&width=600" type="image/webp" media="(min-width: 768px)">
+                        <source srcset="assets/pa-tomaquet-1.jpg?as=webp&width=400" type="image/webp" media="(max-width: 767px)">
+
+                        <img src="assets/pa-tomaquet-1.jpg?width=400" alt="Pa amb Tomàquet preparation" class="additional-image">
+                    </picture>
+
+                    <picture>
+                        <source srcset="assets/pa-tomaquet-2.jpg?as=avif&width=600" type="image/avif" media="(min-width: 768px)">
+                        <source srcset="assets/pa-tomaquet-2.jpg?as=avif&width=400" type="image/avif" media="(max-width: 767px)">
+
+                        <source srcset="assets/pa-tomaquet-2.jpg?as=webp&width=600" type="image/webp" media="(min-width: 768px)">
+                        <source srcset="assets/pa-tomaquet-2.jpg?as=webp&width=400" type="image/webp" media="(max-width: 767px)">
+
+                        <img src="assets/pa-tomaquet-2.jpg?width=400" alt="Pa amb Tomàquet with toppings" class="additional-image">
+                    </picture>
+
+                    <picture>
+                        <source srcset="assets/pa-tomaquet-3.jpg?as=avif&width=600" type="image/avif" media="(min-width: 768px)">
+                        <source srcset="assets/pa-tomaquet-3.jpg?as=avif&width=400" type="image/avif" media="(max-width: 767px)">
+
+                        <source srcset="assets/pa-tomaquet-3.jpg?as=webp&width=600" type="image/webp" media="(min-width: 768px)">
+                        <source srcset="assets/pa-tomaquet-3.jpg?as=webp&width=400" type="image/webp" media="(max-width: 767px)">
+
+                        <img src="assets/pa-tomaquet-3.jpg?width=400" alt="Pa amb Tomàquet served" class="additional-image">
+                    </picture>
                 </div>
             </section>
 

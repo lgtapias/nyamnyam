@@ -41,7 +41,21 @@
             <p><strong>Difficulty:</strong> Easy</p>
         </div>
         
-        <img src="/pa-amb-tomaquet.007f8704.jpeg" alt="Pa amb tomàquet preparat" class="featured-image">
+        <picture>
+            <!-- Versió AVIF per navegadors moderns -->
+            <source srcset="/pa-amb-tomaquet.713f8d4a.avif" type="image/avif" media="(min-width: 1200px)">
+            <source srcset="/pa-amb-tomaquet.142edd51.avif" type="image/avif" media="(min-width: 768px)">
+            <source srcset="/pa-amb-tomaquet.3f041ba1.avif" type="image/avif" media="(max-width: 767px)">
+        
+            <!-- Versió WebP per navegadors que no suporten AVIF -->
+            <source srcset="/pa-amb-tomaquet.25afa80f.webp" type="image/webp" media="(min-width: 1200px)">
+            <source srcset="/pa-amb-tomaquet.635331a4.webp" type="image/webp" media="(min-width: 768px)">
+            <source srcset="/pa-amb-tomaquet.54223cd7.webp" type="image/webp" media="(max-width: 767px)">
+        
+            <!-- Fallback per navegadors antics -->
+            <img src="/pa-amb-tomaquet.6307ca54.jpeg" alt="Pa amb tomàquet preparat" class="featured-image">
+        </picture>
+        
         
         <div class="recipe-content">
             <section class="ingredients">
@@ -56,9 +70,35 @@
 
             <section class="media">
                 <div class="image-grid">
-                    <img src="/pa-tomaquet-1.472999c7.jpeg" alt="Pa amb Tomàquet preparation" class="additional-image">
-                    <img src="/pa-tomaquet-2.1034adcf.jpeg" alt="Pa amb Tomàquet with toppings" class="additional-image">
-                    <img src="/pa-tomaquet-3.768e77c3.jpeg" alt="Pa amb Tomàquet served" class="additional-image">
+                    <picture>
+                        <source srcset="/pa-tomaquet-1.45dd6c83.avif" type="image/avif" media="(min-width: 768px)">
+                        <source srcset="/pa-tomaquet-1.20616313.avif" type="image/avif" media="(max-width: 767px)">
+
+                        <source srcset="/pa-tomaquet-1.5448f399.webp" type="image/webp" media="(min-width: 768px)">
+                        <source srcset="/pa-tomaquet-1.1db5e98c.webp" type="image/webp" media="(max-width: 767px)">
+
+                        <img src="/pa-tomaquet-1.4a42f2ca.jpeg" alt="Pa amb Tomàquet preparation" class="additional-image">
+                    </picture>
+
+                    <picture>
+                        <source srcset="/pa-tomaquet-2.c2176a6d.avif" type="image/avif" media="(min-width: 768px)">
+                        <source srcset="/pa-tomaquet-2.51845dd2.avif" type="image/avif" media="(max-width: 767px)">
+
+                        <source srcset="/pa-tomaquet-2.24559043.webp" type="image/webp" media="(min-width: 768px)">
+                        <source srcset="/pa-tomaquet-2.b98c6089.webp" type="image/webp" media="(max-width: 767px)">
+
+                        <img src="/pa-tomaquet-2.a4242bbb.jpeg" alt="Pa amb Tomàquet with toppings" class="additional-image">
+                    </picture>
+
+                    <picture>
+                        <source srcset="/pa-tomaquet-3.6e395c5b.avif" type="image/avif" media="(min-width: 768px)">
+                        <source srcset="/pa-tomaquet-3.7c0df3d2.avif" type="image/avif" media="(max-width: 767px)">
+
+                        <source srcset="/pa-tomaquet-3.2ecd63f8.webp" type="image/webp" media="(min-width: 768px)">
+                        <source srcset="/pa-tomaquet-3.40eb06b5.webp" type="image/webp" media="(max-width: 767px)">
+
+                        <img src="/pa-tomaquet-3.982c9e39.jpeg" alt="Pa amb Tomàquet served" class="additional-image">
+                    </picture>
                 </div>
             </section>
 

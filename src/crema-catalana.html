@@ -41,9 +41,22 @@
             <p><strong>Difficulty:</strong> Medium</p>
         </div>
         
-        <img src="assets/crema-catalana.jpg" 
-             alt="Crema catalana preparada"
-             class="featured-image">
+        <picture>
+            <!-- Versió AVIF per navegadors moderns -->
+            <source srcset="assets/crema-catalana.jpg?as=avif&width=1200" type="image/avif" media="(min-width: 1200px)">
+            <source srcset="assets/crema-catalana.jpg?as=avif&width=800" type="image/avif" media="(min-width: 768px)">
+            <source srcset="assets/crema-catalana.jpg?as=avif&width=400" type="image/avif" media="(max-width: 767px)">
+        
+            <!-- Versió WebP per navegadors que no suporten AVIF -->
+            <source srcset="assets/crema-catalana.jpg?as=webp&width=1200" type="image/webp" media="(min-width: 1200px)">
+            <source srcset="assets/crema-catalana.jpg?as=webp&width=800" type="image/webp" media="(min-width: 768px)">
+            <source srcset="assets/crema-catalana.jpg?as=webp&width=400" type="image/webp" media="(max-width: 767px)">
+        
+            <!-- Fallback per navegadors antics -->
+            <img src="assets/crema-catalana.jpg?width=400" 
+                 alt="Crema catalana preparada"
+                 class="featured-image">
+        </picture>
         
         <div class="recipe-content">
             <section class="ingredients">
@@ -61,9 +74,37 @@
 
             <section class="media">
                 <div class="image-grid">
-                    <img src="assets/llet.jpg" alt="Llet" class="additional-image">
-                    <img src="assets/yolks.jpg" alt="Egg Yolks" class="additional-image">
-                    <img src="assets/sugar.jpg" alt="Sugar" class="additional-image">
+
+                    <picture>
+                        <source srcset="assets/llet.jpg?as=avif&width=600" type="image/avif" media="(min-width: 768px)">
+                        <source srcset="assets/llet.jpg?as=avif&width=400" type="image/avif" media="(max-width: 767px)">
+                
+                        <source srcset="assets/llet.jpg?as=webp&width=600" type="image/webp" media="(min-width: 768px)">
+                        <source srcset="assets/llet.jpg?as=webp&width=400" type="image/webp" media="(max-width: 767px)">
+                
+                        <img src="assets/llet.jpg?width=400" alt="Llet" class="additional-image">
+                    </picture>
+                
+                    <picture>
+                        <source srcset="assets/yolks.jpg?as=avif&width=600" type="image/avif" media="(min-width: 768px)">
+                        <source srcset="assets/yolks.jpg?as=avif&width=400" type="image/avif" media="(max-width: 767px)">
+                
+                        <source srcset="assets/yolks.jpg?as=webp&width=600" type="image/webp" media="(min-width: 768px)">
+                        <source srcset="assets/yolks.jpg?as=webp&width=400" type="image/webp" media="(max-width: 767px)">
+                
+                        <img src="assets/yolks.jpg?width=400" alt="Egg yolks" class="additional-image">
+                    </picture>
+                
+                    <picture>
+                        <source srcset="assets/sugar.jpg?as=avif&width=600" type="image/avif" media="(min-width: 768px)">
+                        <source srcset="assets/sugar.jpg?as=avif&width=400" type="image/avif" media="(max-width: 767px)">
+                
+                        <source srcset="assets/sugar.jpg?as=webp&width=600" type="image/webp" media="(min-width: 768px)">
+                        <source srcset="assets/sugar.jpg?as=webp&width=400" type="image/webp" media="(max-width: 767px)">
+                
+                        <img src="assets/sugar.jpg?width=400" alt="Sugar" class="additional-image">
+                    </picture>
+                
                 </div>
             </section>
 

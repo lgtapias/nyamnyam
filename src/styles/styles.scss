@@ -120,20 +120,93 @@ nav {
   }
 }
 
-/* Hero Section */
-.hero {
-  text-align: center;
-  padding: 4rem 1rem 2rem 1rem; 
-  flex: 1;
+/* NyanCAT*/
+.nyancat-container {
+  position: relative; 
+  width: 100%; 
+  height: 200px; 
+  overflow: hidden; 
+  margin-bottom: 2rem;
+  z-index: 1;
+}
 
-  h1 {
-    margin-bottom: 1rem;
-    text-align: center;
+.nyancat {
+  position: absolute;
+  top: 0; 
+  left: -150px; 
+  width: 150px; 
+  height: auto; 
+  animation: fly 10s infinite linear, zigzag 4s infinite linear; 
+  z-index: 2;
+}
+
+/* Animació de moviment horitzontal */
+@keyframes fly {
+  0% {
+    left: -150px; 
   }
+  100% {
+    left: 100%; 
+  }
+}
+
+/* Animació de zig-zag vertical */
+@keyframes zigzag {
+  0% {
+    top: 0%; 
+  }
+  25% {
+    top: 25%; 
+  }
+  50% {
+    top: 50%; 
+  }
+  75% {
+    top: 25%; 
+  }
+  100% {
+    top: 0%; 
+  }
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+  padding: 6rem 0rem;
+}
+
+.hero-image {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 200px; /* Redueix l'amplada a la meitat */
+  height: 200px; /* Redueix l'alçada a la meitat */
+  z-index: 10;
+  clip-path: polygon(30% 0%, 50% 15%, 70% 0%, 90% 10%, 100% 35%, 80% 70%, 50% 100%, 20% 70%, 0% 35%, 10% 10%);
+  overflow: hidden;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.hero h1 {
+  font-size: 4.5rem;
+  color: var(--color-primary);
+  margin-top: 1rem;
+  margin-bottom: 0;
+  position: relative;
+  top: 100px;
 }
 
 /* Slider Section */
 .splide {
+  margin-top: 1.5rem;
   flex: 1;
   margin: 0 auto;
   width: 85%;
@@ -259,7 +332,7 @@ nav {
       }
 
       &:hover {
-        cursor: url("../assets/cursor.png") 16 16, auto; /* Cursor en forma d'emoticona */
+        cursor: url("../assets/cursor.png") 16 16, auto; 
 
         .image-container img {
           transform: scale(1.05);
@@ -279,7 +352,7 @@ nav {
         color: inherit;
 
         &:hover {
-          cursor: url("../assets/cursor.png") 16 16, pointer; /* Cursor en forma d'emoticona */
+          cursor: url("../assets/cursor.png") 16 16, pointer; 
         }
       }
     }
@@ -352,15 +425,29 @@ nav {
     }
 
     .image-grid {
-      display: flex;
-      gap: 1rem;
-
-      .additional-image {
-        width: calc(33.333% - 1rem);
-        height: auto;
-        object-fit: cover;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); 
+      gap: 1rem; 
+      padding: 1rem; 
+      width: 100%; 
+      max-width: 1200px; 
+      margin: 0 auto; 
+  }
+  
+  .additional-image {
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+    display: block; 
+}
+  
+  /* Media query per pantalles petites */
+  @media (max-width: 480px) {
+      .image-grid {
+          grid-template-columns: 1fr; /* Una sola columna */
       }
-    }
+  }
+       
 
     .video iframe {
       width: 100%;
@@ -476,5 +563,29 @@ footer {
 
   .discover-link {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nyancat-container {
+    height: 150px; 
+    margin-bottom: 1.5rem;
+  }
+
+  .splide {
+    margin-top: 1rem; 
+    height: 30vh; 
+  }
+}
+
+@media (max-width: 480px) {
+  .nyancat-container {
+    height: 120px; 
+    margin-bottom: 1rem;
+  }
+
+  .splide {
+    margin-top: 0.5rem;
+    height: 25vh; 
   }
 }
