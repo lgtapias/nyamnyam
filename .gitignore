@@ -1,0 +1,13 @@
+HEAD
+
+node_modules/
+
+
+dist/
+
+/node_modules
+/.cache
+/dist
+.DS_Store
+main
+.parcel-cache/

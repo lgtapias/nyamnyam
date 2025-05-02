@@ -8,11 +8,11 @@ const inputFolder = '/Users/admin/Documents/pac1/src/assets/';
 // Carpeta de destí per guardar les imatges optimitzades
 const outputFolder = '/Users/admin/Documents/pac1/src/assets/optimized/';
 
-// Resolucions desitjades
-const resolutions = [
-    { suffix: '1x', width: 400 },
-    { suffix: '2x', width: 800 },
-    { suffix: '3x', width: 1200 },
+// Configuració de resolucions i DPI
+const dpiSettings = [
+    { suffix: '1x', width: 400, dpi: 72 },
+    { suffix: '2x', width: 800, dpi: 144 },
+    { suffix: '3x', width: 1200, dpi: 300 },
 ];
 
 // Comprovar si la carpeta de destí existeix; si no, crear-la
@@ -36,20 +36,21 @@ fs.readdir(inputFolder, (err, files) => {
     imageFiles.forEach(file => {
         const inputFilePath = path.join(inputFolder, file);
 
-        resolutions.forEach(({ suffix, width }) => {
+        dpiSettings.forEach(({ suffix, width, dpi }) => {
             const outputFilePath = path.join(
                 outputFolder,
                 `${path.parse(file).name}-${suffix}${path.extname(file)}`
             );
 
-            // Redimensionar la imatge
+            // Redimensionar la imatge i establir els DPI
             sharp(inputFilePath)
                 .resize(width)
+                .withMetadata({ density: dpi })
                 .toFile(outputFilePath, (err) => {
                     if (err) {
                         console.error(`Error processant ${file} (${suffix}):`, err);
                     } else {
-                        console.log(`Imatge generada: ${outputFilePath}`);
+                        console.log(`Imatge generada amb DPI: ${outputFilePath}`);
                     }
                 });
         });
