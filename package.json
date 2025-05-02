@@ -1,21 +1,22 @@
 {
   "name": "nyam-nyam",
   "version": "1.0.0",
-  "description": "",
+  "description": "A responsive web project featuring traditional Catalan recipes",
   "repository": {
     "type": "git",
     "url": "https://github.com/lgtapias/nyamnyam.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Lola Garcia Tàpias <lolagarciatapias@uoc.edu> (https://github.com/lgtapias)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/lgtapias/nyamnyam/issues"
   },
   "homepage": "https://github.com/lgtapias/nyamnyam#readme",
   "scripts": {
-    "start": "parcel src/index.html",
-    "build": "parcel build src/index.html --dist-dir dist --public-url ./",
+    "clean": "rimraf dist .parcel-cache",
+    "start": "npm run clean && parcel src/index.html",
+    "build": "npm run clean && parcel build src/index.html --dist-dir dist --public-url ./ --no-content-hash",
     "serve": "http-server dist",
     "deploy": "gh-pages -d dist"
   },
@@ -26,6 +27,7 @@
     "gh-pages": "^4.0.0",
     "http-server": "^14.0.0",
     "parcel": "^2.14.4",
+    "rimraf": "^6.0.1",
     "sass": "^1.87.0",
     "svgo": "^3.3.2"
   },

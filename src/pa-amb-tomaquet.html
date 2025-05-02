@@ -42,18 +42,11 @@
         </div>
         
         <picture>
-            <!-- Versió AVIF per navegadors moderns -->
-            <source srcset="assets/pa-amb-tomaquet.jpg?as=avif&width=1200" type="image/avif" media="(min-width: 1200px)">
-            <source srcset="assets/pa-amb-tomaquet.jpg?as=avif&width=800" type="image/avif" media="(min-width: 768px)">
-            <source srcset="assets/pa-amb-tomaquet.jpg?as=avif&width=400" type="image/avif" media="(max-width: 767px)">
-        
-            <!-- Versió WebP per navegadors que no suporten AVIF -->
-            <source srcset="assets/pa-amb-tomaquet.jpg?as=webp&width=1200" type="image/webp" media="(min-width: 1200px)">
-            <source srcset="assets/pa-amb-tomaquet.jpg?as=webp&width=800" type="image/webp" media="(min-width: 768px)">
-            <source srcset="assets/pa-amb-tomaquet.jpg?as=webp&width=400" type="image/webp" media="(max-width: 767px)">
-        
-            <!-- Fallback per navegadors antics -->
-            <img src="assets/pa-amb-tomaquet.jpg?width=400" 
+            <source srcset="assets/pa-amb-tomaquet.jpg" media="(min-width: 1024px)">
+            <source srcset="assets/pa-amb-tomaquet-tablet.jpg" media="(min-width: 768px)">
+            <source srcset="assets/pa-amb-tomaquet-mobile.jpg" media="(max-width: 767px)">
+            
+            <img src="assets/pa-amb-tomaquet-mobile.jpg" 
                  alt="Pa amb tomàquet preparat"
                  class="featured-image">
         </picture>

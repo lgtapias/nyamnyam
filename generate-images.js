@@ -27,7 +27,7 @@ fs.readdir(inputFolder, (err, files) => {
         return;
     }
 
-    // Filtrar només fitxers d'imatges (jpg, jpeg, png, etc.)
+    // Filtrar només fitxers d'imatges (jpg, jpeg, png)
     const imageFiles = files.filter(file =>
         /\.(jpg|jpeg|png)$/i.test(file)
     );

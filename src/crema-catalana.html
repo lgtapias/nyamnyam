@@ -42,21 +42,12 @@
         </div>
         
         <picture>
-            <!-- Versió AVIF per navegadors moderns -->
-            <source srcset="assets/crema-catalana.jpg?as=avif&width=1200" type="image/avif" media="(min-width: 1200px)">
-            <source srcset="assets/crema-catalana.jpg?as=avif&width=800" type="image/avif" media="(min-width: 768px)">
-            <source srcset="assets/crema-catalana.jpg?as=avif&width=400" type="image/avif" media="(max-width: 767px)">
-        
-            <!-- Versió WebP per navegadors que no suporten AVIF -->
-            <source srcset="assets/crema-catalana.jpg?as=webp&width=1200" type="image/webp" media="(min-width: 1200px)">
-            <source srcset="assets/crema-catalana.jpg?as=webp&width=800" type="image/webp" media="(min-width: 768px)">
-            <source srcset="assets/crema-catalana.jpg?as=webp&width=400" type="image/webp" media="(max-width: 767px)">
-        
-            <!-- Fallback per navegadors antics -->
-            <img src="assets/crema-catalana.jpg?width=400" 
-                 alt="Crema catalana preparada"
-                 class="featured-image">
+            <source srcset="./assets/crema-catalana-mobile.jpg" media="(max-width: 767px)">
+            <source srcset="./assets/crema-catalana-tablet.jpg" media="(min-width: 768px) and (max-width: 1023px)">
+            <source srcset="./assets/crema-catalana.jpg" media="(min-width: 1024px)">
+            <img src="./assets/crema-catalana.jpg" alt="Crema Catalana" class="featured-image">
         </picture>
+          
         
         <div class="recipe-content">
             <section class="ingredients">

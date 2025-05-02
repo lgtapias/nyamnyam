@@ -120,68 +120,19 @@ nav {
   }
 }
 
-/* NyanCAT*/
-.nyancat-container {
-  position: relative; 
-  width: 100%; 
-  height: 200px; 
-  overflow: hidden; 
-  margin-bottom: 2rem;
-  z-index: 1;
-}
-
-.nyancat {
-  position: absolute;
-  top: 0; 
-  left: -150px; 
-  width: 150px; 
-  height: auto; 
-  animation: fly 10s infinite linear, zigzag 4s infinite linear; 
-  z-index: 2;
-}
-
-/* Animació de moviment horitzontal */
-@keyframes fly {
-  0% {
-    left: -150px; 
-  }
-  100% {
-    left: 100%; 
-  }
-}
-
-/* Animació de zig-zag vertical */
-@keyframes zigzag {
-  0% {
-    top: 0%; 
-  }
-  25% {
-    top: 25%; 
-  }
-  50% {
-    top: 50%; 
-  }
-  75% {
-    top: 25%; 
-  }
-  100% {
-    top: 0%; 
-  }
-}
-
 .hero {
   position: relative;
   text-align: center;
-  padding: 6rem 0rem;
+  padding: 1rem 0rem;
 }
 
 .hero-image {
-  position: absolute;
+  position: relative;
   top: 0px;
   left: 50%;
-  transform: translate(-50%, 0);
-  width: 200px; /* Redueix l'amplada a la meitat */
-  height: 200px; /* Redueix l'alçada a la meitat */
+  transform: translate(-50%,0%);
+  width: 200px; 
+  height: 200px; 
   z-index: 10;
   clip-path: polygon(30% 0%, 50% 15%, 70% 0%, 90% 10%, 100% 35%, 80% 70%, 50% 100%, 20% 70%, 0% 35%, 10% 10%);
   overflow: hidden;
@@ -201,16 +152,62 @@ nav {
   margin-top: 1rem;
   margin-bottom: 0;
   position: relative;
-  top: 100px;
+}
+
+/* NyanCAT*/
+.nyancat-container {
+  position: relative; 
+  width: 100%; 
+  height: 200px; 
+  overflow: hidden; 
+  margin-bottom: 2rem 0;
+  z-index: 1;
+}
+
+.nyancat {
+  position: absolute;
+  top: 0; 
+  left: -150px; 
+  animation: fly 10s infinite linear, zigzag 4s infinite linear; 
+  z-index: 10;
+}
+
+/* NyanCat Animation*/
+@keyframes fly {
+  0% {
+    left: -150px; 
+  }
+  100% {
+    left: 100%; 
+  }
+}
+
+@keyframes zigzag {
+  0% {
+    top: 0%; 
+  }
+  25% {
+    top: 25%; 
+  }
+  50% {
+    top: 50%; 
+  }
+  75% {
+    top: 25%; 
+  }
+  100% {
+    top: 0%; 
+  }
 }
 
 /* Slider Section */
 .splide {
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   flex: 1;
   margin: 0 auto;
   width: 85%;
   height: 35vh;
+  z-index: 5;
 
   .splide__slide {
     position: relative;
@@ -571,6 +568,21 @@ footer {
     height: 150px; 
     margin-bottom: 1.5rem;
   }
+
+  @media (max-width: 768px) {
+    .nyancat {
+      width: 180px; 
+      height: 70px;
+    }
+  }
+
+
+@media (max-width: 480px) {
+  .nyancat {
+    width: 150px; 
+    height: 58px;
+  }
+}
 
   .splide {
     margin-top: 1rem; 
