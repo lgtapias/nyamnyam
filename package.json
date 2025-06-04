@@ -16,7 +16,7 @@
   "scripts": {
     "clean": "rimraf dist .parcel-cache",
     "start": "npm run clean && parcel index.html",
-    "build": "npm run clean && parcel build index.html --dist-dir dist --public-url ./ --no-content-hash",
+    "build": "npm run clean && parcel build index.html crema-catalana.html links.html pa-amb-tomaquet.html recipes.html --dist-dir dist --public-url ./ --no-content-hash",
     "serve": "http-server dist",
     "deploy": "gh-pages -d dist"
   },
