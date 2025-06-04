@@ -16,7 +16,8 @@
     <meta name="theme-color" content="#465BBD">
     <!-- Styles -->
     <link rel="stylesheet" href="/pac1.867122b9.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/css/splide.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/css/splide.min.css" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/css/splide.min.css"></noscript>
 </head>
 <body>
     <!-- Skip to main content -->
@@ -35,11 +36,15 @@
 
     <!-- Hero Section -->
     <section class="hero">
-      <div class="hero-image">
-        <img src="/ferran.6ea00e49.png" alt="Ferran Adrià" class="heart-clip">
-      </div>
-      <h1>Welcome to nyamNyam😋!</h1>
-    </section>
+  <div class="hero-image">
+    <picture>
+      <source srcset="/ferran.eb7a98b5.webp" type="image/webp">
+      <img src="/ferran.6ea00e49.png" alt="Ferran Adrià" class="heart-clip" width="1248" height="768">
+    </picture>
+  </div>
+  <h1>Welcome to nyamNyam😋!</h1>
+</section>
+
 
     <!-- NyanCAT --> 
     <div class="nyancat-container">
@@ -106,31 +111,49 @@
       </svg>        
     </div>
 
-    <!-- Slider Section -->
-    <section id="image-slider" class="splide" aria-label="Splide Basic HTML Example">
-      <div class="splide__track">
-          <ul class="splide__list">
-              <li class="splide__slide">
-                  <img src="/bunyols-1x.9c412ff7.jpeg" srcset="/bunyols-1x.9c412ff7.jpeg 1x, /bunyols-2x.d39288f4.jpeg 2x, /bunyols-3x.ee7f75df.jpeg 3x" alt="Bunyols">
-              </li>
-              <li class="splide__slide">
-                  <img src="/canelons-1x.e4b58e89.jpeg" srcset="/canelons-1x.e4b58e89.jpeg 1x, /canelons-2x.afd69889.jpeg 2x, /canelons-3x.2226e4d8.jpeg 3x" alt="Canelons">
-              </li>
-              <li class="splide__slide">
-                  <img src="/escudella-1x.26271984.jpeg" srcset="/escudella-1x.26271984.jpeg 1x, /escudella-2x.1f54ccee.jpeg 2x, /escudella-3x.d80caa58.jpeg 3x" alt="Escudella">
-              </li>
-              <li class="splide__slide">
-                  <img src="/fricando-1x.bb8f3dd9.jpeg" srcset="/fricando-1x.bb8f3dd9.jpeg 1x, /fricando-2x.584582c7.jpeg 2x, /fricando-3x.9015e71f.jpeg 3x" alt="Fricandó">
-              </li>
-              <li class="splide__slide">
-                  <img src="/crema-catalana-1x.08ba4366.jpeg" srcset="/crema-catalana-1x.08ba4366.jpeg 1x, /crema-catalana-2x.a1138777.jpeg 2x, /crema-catalana-3x.62dca64a.jpeg 3x" alt="Crema Catalana">
-              </li>
-              <li class="splide__slide">
-                  <img src="/pa-amb-tomaquet-1x.53f079fe.jpeg" srcset="/pa-amb-tomaquet-1x.53f079fe.jpeg 1x, /pa-amb-tomaquet-2x.35f10e40.jpeg 2x, /pa-amb-tomaquet-3x.eda45e8b.jpeg 3x" alt="Pa amb Tomàquet">
-              </li>
-          </ul>
-      </div>
-    </section>
+ <!-- Slider Section -->
+<section id="image-slider" class="splide" aria-label="Splide Basic HTML Example">
+  <div class="splide__track">
+    <ul class="splide__list">
+      <li class="splide__slide">
+        <picture>
+          <source srcset="/bunyols.44fee039.webp" type="image/webp">
+          <img src="/bunyols-1x.9c412ff7.jpeg" alt="Bunyols" width="400" height="200" loading="lazy">
+        </picture>
+      </li>
+      <li class="splide__slide">
+        <picture>
+          <source srcset="/canelons.4f4f4abf.webp" type="image/webp">
+          <img src="/canelons-1x.e4b58e89.jpeg" alt="Canelons" width="400" height="200">
+        </picture>
+      </li>
+      <li class="splide__slide">
+        <picture>
+          <source srcset="/escudella.626a0eb2.webp" type="image/webp">
+          <img src="/escudella-1x.26271984.jpeg" alt="Escudella" width="400" height="200">
+        </picture>
+      </li>
+      <li class="splide__slide">
+        <picture>
+          <source srcset="/fricando.629e6b85.webp" type="image/webp">
+          <img src="/fricando-1x.bb8f3dd9.jpeg" alt="Fricandó" width="400" height="200">
+        </picture>
+      </li>
+      <li class="splide__slide">
+        <picture>
+          <source srcset="/crema-catalana.707bb13e.webp" type="image/webp">
+          <img src="/crema-catalana-1x.08ba4366.jpeg" alt="Crema Catalana" width="400" height="200">
+        </picture>
+      </li>
+      <li class="splide__slide">
+        <picture>
+          <source srcset="/pa-amb-tomaquet.ae41b91b.webp" type="image/webp">
+          <img src="/pa-amb-tomaquet-1x.53f079fe.jpeg" alt="Pa amb Tomàquet" width="400" height="200">
+        </picture>
+      </li>
+    </ul>
+  </div>
+</section>
 
     <!-- Discover Link -->
     <div class="discover-link-container">

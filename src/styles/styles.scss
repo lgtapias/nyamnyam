@@ -24,7 +24,7 @@ h3 {
 }
 
 body {
-  font-family: "Satoshi", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
 }
 
@@ -379,11 +379,6 @@ nav {
   max-width: 800px;
   margin: 2rem auto;
   padding: 2rem;
-
-  h1,
-  h2 {
-    font-family: "Satoshi", sans-serif;
-  }
 
   .recipe-info {
     display: flex;
